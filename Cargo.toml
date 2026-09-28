@@ -1,0 +1,25 @@
+[package]
+name = "zed-fork-pdf-viewer"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+[workspace]
+members = ["protocol"]
+[dependencies]
+viewer_protocol = { path = "protocol" }
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hayro = "0.7"
+hayro-interpret = "0.7"
+hayro-syntax = "0.7"
+image = { version = "0.25", default-features = false, features = ["png"] }
+kurbo = "0.13"
+log = "0.4"
+[dev-dependencies]
+tempfile = "3"
+[profile.dev]
+debug = "line-tables-only"
+incremental = false
+[profile.release]
+strip = true

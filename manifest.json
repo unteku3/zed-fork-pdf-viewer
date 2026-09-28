@@ -1,0 +1,19 @@
+{
+  "id": "zed-fork-pdf-viewer",
+  "name": "PDF Viewer",
+  "version": "0.1.0",
+  "api_version": 1,
+  "platform": "aarch64-apple-darwin",
+  "executable": "zed-fork-pdf-viewer",
+  "extensions": ["pdf"],
+  "settings_key": "pdf_viewer",
+  "settings": {
+    "send": "image_and_text",
+    "include_current_page": false,
+    "pages_before": 0,
+    "pages_after": 0,
+    "auto_copy_region": false,
+    "preamble_first": null,
+    "preamble_repeat": null
+  }
+}
